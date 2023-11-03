@@ -56,7 +56,7 @@ pipeline {
     stage('Build project') {
       steps {
         sh '''
-        pip3 install -r requirements.txt
+        pip install -r requirements.txt
 
         python main.py
         '''
